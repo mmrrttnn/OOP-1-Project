@@ -43,7 +43,7 @@ public class Main {
                             "saveas <file>                              saves the currently open file in <file>\n" +
                             "help                                       prints this information\n" +
                             "exit                                       exits the program\n" +
-                            "addevent  <date> <hall> <name>             adds a new event\n" +
+                            "addevent <date> <hall> <name>             adds a new event\n" +
                             "freeseats <date> <name>                    shows free seats of an event\n" +
                             "book <row> <seat> <date> <name> <note>     books a ticket for an event\n" +
                             "unbook <row> <seat> <date> <name>          unbooks a ticket for an event\n" +
@@ -60,8 +60,8 @@ public class Main {
                     System.out.println("Invalid Command");
                     break;
             }
-            command = sc.nextLine();
             System.out.println("Insert a command");
+            command = sc.nextLine();
             System.out.println("You chose " + command);
         }
     }
